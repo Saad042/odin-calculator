@@ -1,0 +1,45 @@
+.m-auto {
+  margin: auto;
+  width: 30vw;
+}
+
+.flex-container {
+  display: flex;
+  gap: 8px;
+}
+
+.fd-col {
+  flex-direction: column;
+}
+
+button {
+  flex: 1;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.result-box {
+  border: solid black;
+  padding-top: 18px;
+  text-align: end;
+}
+
+.bg-green {
+  background-color: rgb(25, 173, 25);
+}
+
+.bg-red {
+  background-color: rgb(167, 7, 7);
+}
+
+.m-0 {
+  margin: 0px;
+}
