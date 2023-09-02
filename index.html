@@ -5,42 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
     <div class="m-auto">
       <div class="result-box">
-        <span class="result-text">PlaceHolder Text</span>
+        <span class="result-text"></span>
       </div>
       <div class="flex-container">
         <div class="flex-3">
           <div class="flex-container">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>/</button>
+            <button onclick="addToDisplayString(event)">7</button>
+            <button onclick="addToDisplayString(event)">8</button>
+            <button onclick="addToDisplayString(event)">9</button>
+            <button onclick="addToDisplayString(event)">/</button>
           </div>
           <div class="flex-container">
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>*</button>
+            <button onclick="addToDisplayString(event)">4</button>
+            <button onclick="addToDisplayString(event)">5</button>
+            <button onclick="addToDisplayString(event)">6</button>
+            <button onclick="addToDisplayString(event)">*</button>
           </div>
           <div class="flex-container">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button>
+            <button onclick="addToDisplayString(event)">1</button>
+            <button onclick="addToDisplayString(event)">2</button>
+            <button onclick="addToDisplayString(event)">3</button>
+            <button onclick="addToDisplayString(event)">-</button>
           </div>
           <div class="flex-container">
-            <button>0</button>
-            <button>.</button>
-            <button style="visibility: hidden"></button>
-            <button>+</button>
+            <button onclick="addToDisplayString(event)">0</button>
+            <button onclick="addToDisplayString(event)">.</button>
+            <button onclick="removeLastEntry()"><i class="fa-solid fa-delete-left"></i></button>
+            <button onclick="addToDisplayString(event)">+</button>
           </div>
         </div>
         <div class="flex-container fd-col">
-          <button class="bg-red">Clear</button>
-          <button class="bg-green m-0">=</button>
+          <button onclick="clearDisplayString()" class="bg-red">Clear</button>
+          <button onclick="calculateResult()" class="bg-green m-0">=</button>
         </div>
       </div>
     </div>

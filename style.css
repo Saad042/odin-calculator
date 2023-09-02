@@ -30,6 +30,7 @@ button {
   border: solid black;
   padding-top: 18px;
   text-align: end;
+  min-height: 23px;
 }
 
 .bg-green {
