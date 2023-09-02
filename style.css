@@ -26,11 +26,9 @@ button {
   flex: 3;
 }
 
-.result-box {
-  border: solid black;
+#result-input {
   padding-top: 18px;
   text-align: end;
-  min-height: 23px;
 }
 
 .bg-green {
